@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Introdução aos Filters</title>
+</head>
+<body>
+
+    <div id="root">
+        <div class="container">
+            <br />
+            <input v-model="novoNome">
+            <br /><br />
+            <div>
+                <button class="btn btn-success" @click="adicionar">Adicionar</button>
+            </div>
+            <hr />
+            <ul>
+                <li v-for="nome in nomes">{{nome | capitalizar}}</li>
+            </ul>
+            <hr />
+            <ul>
+                <li v-for="nome in nomes">{{nome}}</li>
+            </ul>
+
+        </div>
+    </div>
+    
+    <script src="../js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

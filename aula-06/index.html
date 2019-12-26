@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introdução a diretivas</title>
+</head>
+<body>
+
+    <div id="root">
+        <h2>{{nome}}</h2>
+        <input type="text" v-model="nome"/>
+        <div v-if="visivel">
+            <h4>DIV 1</h4>
+        </div>
+        <div v-else>
+            <h4>DIV 2</h4>
+        </div>
+
+    </div>
+    
+    <script src="../js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

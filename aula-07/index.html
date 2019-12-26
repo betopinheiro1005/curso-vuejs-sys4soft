@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Introdução aos métodos</title>
+</head>
+<body>
+
+    <div id="root">
+        <div class="container">
+            <br>
+            <button class="btn btn-primary" v-on:click="mostrarEsconder()">Click</button>
+            <button class="btn btn-success" v-on:click="mostrarMensagem()">Click</button>
+            <br>
+            <div id="mensagem"></div>
+            <div v-if="visivel">
+                <h4>DIV 1</h4>
+            </div>
+            <div v-else>
+                <h4>DIV 2</h4>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

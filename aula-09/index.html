@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Diretivas e métodos</title>
+</head>
+<body>
+
+    <div id="root">
+        <div class="container">
+            <br>
+            <input v-model="novaFruta"> 
+            <button v-on:click="inserirFruta()">Inserir</button>
+
+            <h3>Lista de frutas</h3>
+
+            <ul>
+                <li v-for="fruta in frutas">{{fruta}}</li>
+            </ul>
+    
+            <h4>Total: <b>{{totalFrutas}}</b></h4>
+        </div>
+    </div>
+    
+    <script src="../js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

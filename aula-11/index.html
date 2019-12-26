@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Diretivas v-html e v-text</title>
+</head>
+<body>
+
+    <div id="root">
+        <div class="container">
+            <br>
+            <span v-html="valor"></span>
+            <button class="btn btn-primary" @click="t1">Título 1</button>
+            <button class="btn btn-danger" @click="t2">Título 2</button>
+            <button class="btn btn-success" @click="t3">Título 3</button>
+        </div>
+    </div>
+    
+    <script src="../js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
