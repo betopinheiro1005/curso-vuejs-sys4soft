@@ -1,6 +1,12 @@
 # Curso de Vue JS  
 ## SYS4SOFT (João Ribeiro)  
 
+### Instalação de dependências
+
+```bash
+npm install
+```
+
 ### Lista de aulas - [Vídeos do curso](https://www.youtube.com/watch?v=fnPXT1z0Ctw&list=PLXik_5Br-zO_xQHAH9GrNR1gAefYWaKxz)
 
 Aula 01 - Introdução  
