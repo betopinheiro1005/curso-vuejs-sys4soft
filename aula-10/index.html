@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Diretivas v-bind e v-on</title>
+</head>
+<body>
+
+    <div id="root">
+        <div class="container">
+            <br>
+                <h3>O país selecionado é {{pais}}</h3>
+
+                <img :src = "imagem" :alt = "nome_imagem">
+                <!-- <img v-bind:src = "imagem"> -->
+
+                <br /><br />
+
+                <div>
+                    <button class="btn btn-danger" @click="mostrarPortugal()">Portugal</button>
+                    <button class="btn btn-success" @click="mostrarBrasil()">Brasil</button>
+<!--                     <button class="btn btn-danger" v-on:click="mostrarPortugal()">Portugal</button>
+                    <button class="btn btn-success" v-on:click="mostrarBrasil()">Brasil</button>
+ -->                </div>
+        </div>
+    </div>
+    
+    <script src="../js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
